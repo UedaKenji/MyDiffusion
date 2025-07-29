@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "mydiffusion"
+version = "0.1.0"
+description = "A PyTorch implementation of diffusion models for scientific computing"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "diffusion", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.0.0"
+numpy = "^1.21.0"
+pandas = "^1.3.0"
+matplotlib = "^3.5.0"
+pyyaml = "^6.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.0"
+pytest-cov = "^3.0"
+black = "^22.0"
+isort = "^5.0"
+flake8 = "^4.0"
+jupyter = "^1.0"
+ipykernel = "^6.0"
+astropy = "^7.1.0"
+scipy = "^1.16.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 140
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 140
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
