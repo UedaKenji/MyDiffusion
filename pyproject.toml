@@ -2,7 +2,7 @@
 name = "mydiffusion"
 version = "0.1.0"
 description = "A PyTorch implementation of diffusion models for scientific computing"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Kenji Ueda <ueda.kenji@nifs.ac.jp>"]
 readme = "README.md"
 license = "MIT"
 packages = [{include = "diffusion", from = "src"}]
