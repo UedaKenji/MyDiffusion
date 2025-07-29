@@ -6,6 +6,9 @@ authors = ["Kenji Ueda <ueda.kenji@nifs.ac.jp>"]
 readme = "README.md"
 license = "MIT"
 packages = [{include = "diffusion", from = "src"}]
+homepage = "https://github.com/UedaKenji/MyDiffusion"
+repository = "https://github.com/UedaKenji/MyDiffusion.git"
+keywords = ["diffusion", "pytorch", "scientific-computing", "plasma-physics", "machine-learning"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -23,8 +26,8 @@ isort = "^5.0"
 flake8 = "^4.0"
 jupyter = "^1.0"
 ipykernel = "^6.0"
-astropy = "^7.1.0"
-scipy = "^1.16.1"
+astropy = "^6.0.0"
+scipy = "^1.11.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -32,7 +35,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.black]
 line-length = 140
-target-version = ['py310']
+target-version = ['py311']
 
 [tool.isort]
 profile = "black"
